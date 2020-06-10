@@ -1,0 +1,36 @@
+Name: Book
+Type: 
+Table: 
+Fields:
+  Title: string
+  Link: string
+Relationships:
+  Parent: 
+  OneToMany: 
+  ManyToOne: 
+Slots:
+  Model:
+    Imports: 
+    Extends: 
+    Ctor: 
+    Body: 
+  Logic:
+    Imports: 
+    Init: 
+    OnCreateInstance: 
+    OnGetList: 
+    OnGetSingle: 
+    BeforeSave: 
+    AfterSave: 
+    BeforeRemove: 
+    AdapterOut: 
+    Body: 
+  Gateway:
+    Imports: 
+    Endpoints: 
+    EndpointsRoutes: 
+  Service:
+    Dependencies: 
+    AdapterIn: 
+    AdapterOut: 
+    Body: 

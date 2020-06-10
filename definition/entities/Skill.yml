@@ -1,0 +1,37 @@
+Name: Skill
+Type: 
+Table: 
+Fields:
+  Name: string
+  Last Time Used: datetime?
+  
+Relationships:
+  Parent: 
+  OneToMany: 
+  ManyToOne: 
+Slots:
+  Model:
+    Imports: 
+    Extends: 
+    Ctor: 
+    Body: 
+  Logic:
+    Imports: 
+    Init: 
+    OnCreateInstance: 
+    OnGetList: 
+    OnGetSingle: 
+    BeforeSave: 
+    AfterSave: 
+    BeforeRemove: 
+    AdapterOut: 
+    Body: 
+  Gateway:
+    Imports: 
+    Endpoints: 
+    EndpointsRoutes: 
+  Service:
+    Dependencies: 
+    AdapterIn: 
+    AdapterOut: 
+    Body: 

@@ -1,0 +1,7 @@
+Name: skills
+Type: list
+Entity: Skill
+Layout:
+  - container:
+      - h1: Skills
+Slots: {}

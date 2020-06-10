@@ -1,0 +1,7 @@
+Name: git.activity
+Type: list
+Entity: GitActivity
+Layout:
+  - container:
+      - h1: Git Activity
+Slots: {}

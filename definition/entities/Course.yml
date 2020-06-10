@@ -1,0 +1,38 @@
+Name: Course
+Type: 
+Table: 
+Fields:
+  Title: string
+  School: string
+  Completed At: datetime?
+  Link: string
+Relationships:
+  Parent: 
+  OneToMany: 
+  ManyToOne: 
+Slots:
+  Model:
+    Imports: 
+    Extends: 
+    Ctor: 
+    Body: 
+  Logic:
+    Imports: 
+    Init: 
+    OnCreateInstance: 
+    OnGetList: 
+    OnGetSingle: 
+    BeforeSave: 
+    AfterSave: 
+    BeforeRemove: 
+    AdapterOut: 
+    Body: 
+  Gateway:
+    Imports: 
+    Endpoints: 
+    EndpointsRoutes: 
+  Service:
+    Dependencies: 
+    AdapterIn: 
+    AdapterOut: 
+    Body: 

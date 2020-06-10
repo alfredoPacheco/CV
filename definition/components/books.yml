@@ -1,0 +1,7 @@
+Name: books
+Type: list
+Entity: Book
+Layout:
+  - container:
+      - h1: Books Here
+Slots: {}

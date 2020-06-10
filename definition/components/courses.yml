@@ -1,0 +1,7 @@
+Name: courses
+Type: list
+Entity: Course
+Layout:
+  - container:
+      - h5: Courses Here
+Slots: {}

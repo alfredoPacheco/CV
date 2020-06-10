@@ -1,0 +1,7 @@
+Name: portfolio
+Type: list
+Entity: Project
+Layout:
+  - container:
+      - h1: Portfolio
+Slots: {}

@@ -1,0 +1,36 @@
+Name: GitActivity
+Type: 
+Table: 
+Fields:
+  Link: string
+  Image: string
+Relationships:
+  Parent: 
+  OneToMany: 
+  ManyToOne: 
+Slots:
+  Model:
+    Imports: 
+    Extends: 
+    Ctor: 
+    Body: 
+  Logic:
+    Imports: 
+    Init: 
+    OnCreateInstance: 
+    OnGetList: 
+    OnGetSingle: 
+    BeforeSave: 
+    AfterSave: 
+    BeforeRemove: 
+    AdapterOut: 
+    Body: 
+  Gateway:
+    Imports: 
+    Endpoints: 
+    EndpointsRoutes: 
+  Service:
+    Dependencies: 
+    AdapterIn: 
+    AdapterOut: 
+    Body: 

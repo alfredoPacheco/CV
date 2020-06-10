@@ -128,13 +128,13 @@ class AccountForm extends FormContainer<AccountProps> {
                     </Grid>
                     <Grid item xs={12} sm>
                       <Typography align='center' variant='h5'>
-                        Favor de ingresar su nueva contrase∩┐╜a.
+                        Please enter your new password.
                       </Typography>
                     </Grid>
                     <Grid item xs={10} sm={5} md={5} lg={5}>
                       <TextField
                         type={showPassword ? 'text' : 'password'}
-                        label='Nueva Contrase∩┐╜a'
+                        label='New Password'
                         value={baseEntity.Password || ''}
                         onChange={event => this.handleInputChange(event, 'Password')}
                         style={{ textAlign: 'left' }}
@@ -174,7 +174,7 @@ class AccountForm extends FormContainer<AccountProps> {
                     </Grid>
                     <Grid item xs={12} sm>
                       <Button type='submit' variant='contained' color='primary' endIcon={<Icon>send</Icon>} style={{ margin: '15%' }}>
-                        Enviar
+                        Send
                       </Button>
                     </Grid>
                     {sesionError && (

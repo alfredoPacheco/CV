@@ -166,7 +166,7 @@ class App extends React.Component {
     const { anchorEl } = this.state;
     const { auth } = this.state.globals;
     const open = Boolean(anchorEl);
-    const fullscreen = !!(this.props as any).router.query.hasOwnProperty('fullscreen');
+    const fullscreen = true;
 
     function LinkTab(props: any) {
       let { href } = props;
