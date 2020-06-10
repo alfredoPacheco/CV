@@ -45,11 +45,11 @@ class AccountForm extends FormContainer<AccountProps> {
                 <Grid item container direction='column' justify='center' spacing={2} xs={12} sm>
                   <Grid item xs={12} sm>
                     <Typography align='center' variant='h6'>
-                      <Icon style={{height: 20}}>mail</Icon> Favor de revisar enlace en correo electrónico para cambiar contraseña.
+                      <Icon style={{ height: 20 }}>mail</Icon> Please check your email to reset your password.
                     </Typography>
                     <Typography align='center'>
-                      <Button href="/" variant='contained' color='primary' startIcon={<Icon>arrow_back</Icon>} style={{ margin: '5%' }}>
-                        Regresar a inicio de sesión
+                      <Button href='/' variant='contained' color='primary' startIcon={<Icon>arrow_back</Icon>} style={{ margin: '5%' }}>
+                        Return to Login
                       </Button>
                     </Typography>
                   </Grid>

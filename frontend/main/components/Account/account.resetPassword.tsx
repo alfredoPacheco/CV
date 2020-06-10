@@ -96,7 +96,7 @@ class AccountForm extends FormContainer<AccountProps> {
         );
     } else {
       this.setState({
-        passwordError: 'No coinsiden las contraseñas'
+        passwordError: 'Passwords do not match.'
       });
     }
   };
@@ -128,13 +128,13 @@ class AccountForm extends FormContainer<AccountProps> {
                     </Grid>
                     <Grid item xs={12} sm>
                       <Typography align='center' variant='h5'>
-                        Favor de ingresar su nueva contraseña.
+                        Favor de ingresar su nueva contrase∩┐╜a.
                       </Typography>
                     </Grid>
                     <Grid item xs={10} sm={5} md={5} lg={5}>
                       <TextField
                         type={showPassword ? 'text' : 'password'}
-                        label='Nueva Contraseña'
+                        label='Nueva Contrase∩┐╜a'
                         value={baseEntity.Password || ''}
                         onChange={event => this.handleInputChange(event, 'Password')}
                         style={{ textAlign: 'left' }}
@@ -160,7 +160,7 @@ class AccountForm extends FormContainer<AccountProps> {
                       />
                       <TextField
                         type={showPassword ? 'text' : 'password'}
-                        label='Confirmar Contraseña'
+                        label='Confirm Password'
                         error={passwordError}
                         helperText={passwordError}
                         value={baseEntity.ConfirmPassword || ''}
@@ -181,7 +181,7 @@ class AccountForm extends FormContainer<AccountProps> {
                       <Grid item xs={10} sm={10} md={10} lg={10}>
                         <Button href='/forgot-password' variant='outlined' color='primary'>
                           <Typography align='center' variant='button' style={{ color: '#ff0000' }}>
-                            Sesión Invalida... Favor de crear nueva sesión para restablecer contraseña.
+                            Invalid session, please create a new session to reset your password.
                           </Typography>
                           {/* <Icon>contact_mail</Icon> */}
                         </Button>

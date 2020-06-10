@@ -34,7 +34,7 @@ const Login = props => {
           <form onSubmit={login}>
             <CardContent>
               <Typography style={{ margin: '40px 5px' }} variant='h4' align='center' color='inherit'>
-              main
+                CV Alfredo Pacheco
               </Typography>
               {/* <div className="finger">
                 <Fingerprint style={{ fontSize: 80 }} />

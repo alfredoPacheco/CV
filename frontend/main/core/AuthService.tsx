@@ -50,7 +50,6 @@ export default class AuthService {
   };
 
   static setAccountLocalStorage = account => {
-    console.log('set Account Local Stoarge')
     AuthService.fillAuthData();
     if (AuthService.auth) {
       AuthService.auth.account = account;

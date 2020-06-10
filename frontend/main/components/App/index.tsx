@@ -188,7 +188,7 @@ class App extends React.Component {
           `}
         </style>
         <Head>
-          <title>main</title>
+          <title>CV Alfredo Pacheco</title>
           <meta charSet='utf-8' />
           <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no' />
           <meta name='format-detection' content='telephone=no' />
@@ -212,7 +212,7 @@ class App extends React.Component {
               <Link href={'/'}>
                 <ButtonBase>
                   <Typography variant='h6' color='inherit'>
-                    main
+                    CV Alfredo Pacheco
                   </Typography>
                 </ButtonBase>
               </Link>

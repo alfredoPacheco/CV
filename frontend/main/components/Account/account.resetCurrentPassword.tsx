@@ -67,7 +67,7 @@ class AccountForm extends FormContainer<AccountProps> {
         );
     } else {
       this.setState({
-        passwordError: 'No coinsiden las contraseñas'
+        passwordError: 'Passwords do not match.'
       });
     }
   };
@@ -96,14 +96,14 @@ class AccountForm extends FormContainer<AccountProps> {
               </Grid>
               <Grid item xs={12} sm>
                 <Typography align='center' variant='h5'>
-                  Favor de ingresar su nueva contraseña.
+                  Favor de ingresar su nueva contrase∩┐╜a.
                 </Typography>
               </Grid>
               <Grid item xs={12} sm>
                 <TextField
                   type='password'
                   required
-                  label='Contraseña Actual'
+                  label='Current Password'
                   error={sesionError || false}
                   value={baseEntity.CurrentPassword || ''}
                   onChange={event => this.handleInputChange(event, 'CurrentPassword')}
@@ -116,14 +116,14 @@ class AccountForm extends FormContainer<AccountProps> {
                 {sesionError && (
                   <Grid item xs={12} sm>
                     <Typography align='left' variant='subtitle2' style={{ color: '#ff0000c7' }}>
-                      Contraseña Actual Incorrecta.
+                      Invalid credentials.
                     </Typography>
                   </Grid>
                 )}
                 <TextField
                   type={showPassword ? 'text' : 'password'}
                   required
-                  label='Nueva Contraseña'
+                  label='Nueva Contrase∩┐╜a'
                   value={baseEntity.Password || ''}
                   onChange={event => this.handleInputChange(event, 'Password')}
                   style={{ textAlign: 'left' }}
@@ -150,7 +150,7 @@ class AccountForm extends FormContainer<AccountProps> {
                 <TextField
                   type={showPassword ? 'text' : 'password'}
                   required
-                  label='Confirmar Contraseña'
+                  label='Confirm Password'
                   error={passwordError || false}
                   helperText={passwordError}
                   value={baseEntity.ConfirmPassword || ''}

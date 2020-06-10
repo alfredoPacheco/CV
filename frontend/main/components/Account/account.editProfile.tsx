@@ -57,19 +57,18 @@ class AccountForm extends FormContainer<AccountProps> {
 
     if (this.state.baseEntity.Password === this.state.baseEntity.ConfirmPassword) {
       this.setState({
-        passwordError: 'No coinsiden las contraseñas'
+        passwordError: 'Passwords do not match.'
       });
     }
   };
 
   refresh = () => {
-    console.log('Edit Profile Refesh');
     let currentUser = this.context.auth.user;
 
     if (currentUser) {
       this.load(currentUser.UserId);
     } else {
-      alert('No hay user');
+      alert('No user.');
     }
   };
 
@@ -118,12 +117,12 @@ class AccountForm extends FormContainer<AccountProps> {
           <Grid container direction='row' justify='center' alignItems='center' style={{ marginBottom: 10 }}>
             <Grid item xs={6}>
               <Typography variant='h5' align='center'>
-                Editar Perfil
+                Edit Profile
               </Typography>
             </Grid>
             <Grid item xs={6}>
               <Button variant='contained' color='primary' fullWidth size='large' onClick={event => this.save()}>
-                Guardar
+                Save
               </Button>
             </Grid>
           </Grid>
@@ -152,7 +151,7 @@ class AccountForm extends FormContainer<AccountProps> {
               <Grid item xs={12}>
                 <TextField
                   type='text'
-                  label='Nombre de Usuario'
+                  label='User Name'
                   variant='outlined'
                   value={baseEntity.UserName || ''}
                   onChange={event => this.handleInputChange(event, 'UserName')}
@@ -163,7 +162,7 @@ class AccountForm extends FormContainer<AccountProps> {
                 />
                 <TextField
                   type='text'
-                  label='Nombre a Mostrar'
+                  label='Display Name'
                   value={baseEntity.DisplayName || ''}
                   onChange={event => this.handleInputChange(event, 'DisplayName')}
                   style={{ textAlign: 'left' }}
@@ -174,7 +173,7 @@ class AccountForm extends FormContainer<AccountProps> {
                 />
                 <TextField
                   type='email'
-                  label='Correo Electrónico'
+                  label='Email Address'
                   value={baseEntity.Email || ''}
                   onChange={event => this.handleInputChange(event, 'Email')}
                   style={{ textAlign: 'left' }}
@@ -185,7 +184,7 @@ class AccountForm extends FormContainer<AccountProps> {
                 />
                 <TextField
                   type='text'
-                  label='Numero de Telefono'
+                  label='Phone Number'
                   value={baseEntity.PhoneNumber || ''}
                   onChange={event => this.handleInputChange(event, 'PhoneNumber')}
                   style={{ textAlign: 'left' }}
@@ -207,7 +206,7 @@ class AccountForm extends FormContainer<AccountProps> {
                       fullWidth
                     >
                       <Icon>lock</Icon>
-                      Actualizar Contraseña
+                      Update Password
                     </Button>
                   </>
                 )}

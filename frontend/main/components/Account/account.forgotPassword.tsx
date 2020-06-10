@@ -84,16 +84,16 @@ class AccountForm extends FormContainer<AccountProps> {
                   <Grid item container direction='column' alignItems='center' justify='center' spacing={2} xs={12} sm>
                     <Grid item xs>
                       <Typography align='center' variant='h6'>
-                        ¿Olvidaste tu contraseña?
+                        Forgot your password?
                       </Typography>
                       <Typography align='center' variant='h6'>
-                        Favor de ingresar el nombre de usuario o correo electrónico registrado.
+                        Please enter your Username or registered Email Address.
                       </Typography>
                     </Grid>
                     <Grid item xs={12} sm>
                       <TextField
                         type='text'
-                        label='Usuario | Correo eléctronico'
+                        label='Username or Email Address'
                         value={baseEntity.UserName || ''}
                         variant='outlined'
                         onChange={event => this.handleInputChange(event, 'UserName')}
@@ -103,12 +103,12 @@ class AccountForm extends FormContainer<AccountProps> {
                     </Grid>
                     <Grid item xs>
                       <Typography align='center' variant='subtitle2'>
-                        Te enviaremos un enlace a tu correo para que puedas cambiar la contraseña.
+                        An email has been sent to your mailbox so you can change your password.
                       </Typography>
                     </Grid>
                     <Grid item xs={12} sm>
                       <Button type='submit' variant='contained' color='primary' endIcon={<Icon>send</Icon>} style={{ margin: '15%' }}>
-                        Enviar
+                        Send
                       </Button>
                     </Grid>
                   </Grid>

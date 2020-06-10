@@ -4,10 +4,10 @@ import { EntryState } from './Contract';
 
 function debounce(func, wait, immediate?) {
   let timeout;
-  return function () {
+  return function() {
     let context = this,
       args = arguments;
-    let later = function () {
+    let later = function() {
       timeout = null;
       if (!immediate) func.apply(context, args);
     };
@@ -20,7 +20,7 @@ function debounce(func, wait, immediate?) {
 
 export interface ListProps extends FormProps {}
 
-const storageSufixx = 'main';
+const storageSufixx = 'CV Alfredo Pacheco';
 
 class ListContainer<ExtendedProps> extends FormContainer<ListProps & ExtendedProps> {
   debouncedRefresh: any = null;
@@ -482,8 +482,8 @@ class ListContainer<ExtendedProps> extends FormContainer<ListProps & ExtendedPro
 
   // Utils:=======================================================================
   enableCellNavigation = table => {
-    (function ($) {
-      ($.fn as any).enableCellNavigation = function () {
+    (function($) {
+      ($.fn as any).enableCellNavigation = function() {
         let arrow = {
           left: 37,
           up: 38,
@@ -497,7 +497,7 @@ class ListContainer<ExtendedProps> extends FormContainer<ListProps & ExtendedPro
         // adjacent input or textarea. once in a textarea,
         // however, it will not attempt to break out because
         // that just seems too messy imho.
-        this.find('input,textarea,button,select').keydown(function (e) {
+        this.find('input,textarea,button,select').keydown(function(e) {
           // shortcut for key other than arrow keys
 
           if ($.inArray(e.which, [arrow.left, arrow.up, arrow.right, arrow.down]) < 0) return;
@@ -538,7 +538,7 @@ class ListContainer<ExtendedProps> extends FormContainer<ListProps & ExtendedPro
           }
 
           if (moveTo && moveTo.length) {
-            moveTo.find('input,textarea,button,select').each(function (i, input) {
+            moveTo.find('input,textarea,button,select').each(function(i, input) {
               input.focus();
               if (!['button', 'select-one'].includes(input.type)) input.select();
             });
